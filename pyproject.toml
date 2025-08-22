@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "blaise-editing-cloud-functions"
+name = "bes_functions"
 version = "0.1.0"
 description = "A collection of cloud functions related to Blaise Editing Service"
 authors = ["Thomas Wills <62559442+Willst1@users.noreply.github.com>"]
