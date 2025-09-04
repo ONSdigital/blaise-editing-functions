@@ -26,7 +26,7 @@ class BlaiseService:
             questionnaires = self.restapi_client.get_all_questionnaires_for_server_park(
                 self._server_park_name
             )
-            logging.info(f"Got questionnaires")
+            logging.info("Got questionnaires")
             return questionnaires
         except Exception as e:
             error_message = (
