@@ -1,10 +1,6 @@
 import logging
 
-import flask
-
-from utilities.custom_exceptions import (
-    RequestError,
-)
+from utilities.custom_exceptions import RequestError
 
 
 class ValidationService:

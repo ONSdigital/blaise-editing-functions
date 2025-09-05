@@ -1,4 +1,5 @@
-from sqlalchemy import text, Connection, Engine
+from sqlalchemy import Connection, Engine, text
+
 from services.database_connection_service import DatabaseConnectionService
 
 

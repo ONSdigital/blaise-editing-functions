@@ -1,4 +1,5 @@
-from unittest.mock import call, patch, Mock
+from unittest.mock import Mock, call, patch
+
 import pytest
 import sqlalchemy
 from sqlalchemy import URL
