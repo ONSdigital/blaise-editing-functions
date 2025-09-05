@@ -1,5 +1,5 @@
 from contextlib import contextmanager
-from unittest.mock import Mock, patch, call, MagicMock, ANY
+from unittest.mock import ANY, MagicMock, Mock, call, patch
 
 import pytest
 

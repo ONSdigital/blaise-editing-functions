@@ -1,7 +1,7 @@
 import os
 
-from models.database_connection_model import DatabaseConnectionModel
 from models.blaise_connection_model import BlaiseConnectionModel
+from models.database_connection_model import DatabaseConnectionModel
 from utilities.custom_exceptions import ConfigError
 
 
@@ -25,7 +25,7 @@ class ConfigurationProvider:
     def get_database_port_environment_variable(self) -> int:
         port_variable = self.get_environment_variable("DATABASE_PORT")
         if not port_variable.isnumeric():
-            raise ConfigError(f"Environment variable DATABASE_PORT must be a number")
+            raise ConfigError("Environment variable DATABASE_PORT must be a number")
         return int(port_variable)
 
     @staticmethod

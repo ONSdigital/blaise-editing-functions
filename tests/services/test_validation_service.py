@@ -4,9 +4,7 @@ import flask
 import pytest
 
 from services.validation_service import ValidationService
-from utilities.custom_exceptions import (
-    RequestError,
-)
+from utilities.custom_exceptions import RequestError
 
 
 @contextmanager
