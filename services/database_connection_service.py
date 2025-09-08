@@ -1,5 +1,5 @@
 import sqlalchemy
-from sqlalchemy import Engine, URL
+from sqlalchemy import URL, Engine
 
 from providers.configuration_provider import ConfigurationProvider
 

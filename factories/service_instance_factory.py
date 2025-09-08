@@ -2,8 +2,8 @@ from providers.configuration_provider import ConfigurationProvider
 from services.blaise_service import BlaiseService
 from services.case_service import CaseService
 from services.database_connection_service import DatabaseConnectionService
-from services.validation_service import ValidationService
 from services.database_service import DatabaseService
+from services.validation_service import ValidationService
 
 
 class ServiceInstanceFactory:
