@@ -26,8 +26,7 @@ class DatabaseService:
 
     @staticmethod
     def copy_cases_command(edit_table_name: str, questionnaire_table_name: str):
-        return text(
-            f"INSERT INTO {edit_table_name} \
+        return text(f"INSERT INTO {edit_table_name} \
                     SELECT UNEDITED.* \
                     FROM {questionnaire_table_name} UNEDITED \
                     LEFT JOIN {edit_table_name}  EDITED \
@@ -38,5 +37,4 @@ class DatabaseService:
                     QEdit_edited = VALUES( QEdit_edited), \
                     QEdit_LastUpdated = VALUES(QEdit_LastUpdated), \
                     QHAdmin_HOut = VALUES(QHAdmin_HOut), \
-                    DataStream = VALUES(DataStream);"
-        )
+                    DataStream = VALUES(DataStream);")
